@@ -10,7 +10,13 @@ function createCanvas(size) {
         div.style.width = ((canvas.offsetWidth-2)/size)-2+"px";
         canvas.append(div);
     }
-    console.log(canvas.offsetWidth);
 }
 
 createCanvas(10);
+
+//handle mouseenter and change background color of square
+document.querySelectorAll(".square").forEach(item => {
+    item.addEventListener("mouseenter", event => {
+        event.target.style.backgroundColor = "black";
+    })
+})
