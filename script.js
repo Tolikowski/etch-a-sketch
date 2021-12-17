@@ -8,8 +8,8 @@ function createCanvas(size) {
     for (i = 0; i < size * size; i++) {
         const div = document.createElement("div");
         div.classList.add("square");
-        div.style.height = ((canvas.offsetWidth - 0) / size) - 0 + "px";
-        div.style.width = ((canvas.offsetWidth - 0) / size) - 0 + "px";
+        div.style.height = canvas.offsetWidth / size + "px";
+        div.style.width = canvas.offsetWidth / size + "px";
         canvas.append(div);
     }
 }
